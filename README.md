@@ -114,6 +114,8 @@ The node uses ComfyUI's existing Torch, safetensors and tokenizer dependencies. 
 
 ## Connect your workflow
 
+The included [workflow.json](workflow.json) uses the [MOSS Image Base 8-step DMD LoRA by Lodestones](https://huggingface.co/lodestones/MOSS-Image-Base-8-steps-dmd). Download the LoRA into `ComfyUI/models/loras/` and select it in **Load LoRA**; the workflow references it as `moss_image_8_step.safetensors`.
+
 **Load CLIP -> Load LoRA (optional) -> MOSS Smaller Encoder Adapter -> CLIP Text Encode -> KSampler**
 
 1. In **Load CLIP**, select your Qwen3.5-4B checkpoint and set **type** to **moss_image**.

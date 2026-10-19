@@ -461,10 +461,10 @@
         "Node name for S&R": "MOSSSmallerEncoderAdapter"
       },
       "widgets_values": [
-        "moss_qwen35_4b_to_9b_800_train.safetensors"
+        "moss_qwen35_4b_to_9b_1600_train.safetensors"
       ],
       "widgets_values_named": {
-        "adapter_name": "moss_qwen35_4b_to_9b_800_train.safetensors"
+        "adapter_name": "moss_qwen35_4b_to_9b_1600_train.safetensors"
       }
     },
     {

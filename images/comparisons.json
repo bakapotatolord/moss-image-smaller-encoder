@@ -1,0 +1,89 @@
+{
+  "adapter": {
+    "file": "moss_qwen35_4b_to_9b_1600_train.safetensors",
+    "sha256": "df5ed7fa15f4c628ad6cb3539d9cd16d68f198df9cd1e07740e9bd7b162c954b",
+    "training_prompts": 1600
+  },
+  "comparisons": [
+    {
+      "case": "artichoke",
+      "prompt": "A realistic tabletop diorama of a miniature funicular railway climbing the layered leaves of a giant artichoke. Two mustard-yellow cable cars travel on parallel rails, linked by a red cable. The artichoke stands upright on a round walnut plinth, with a tiny ticket booth at its base. Soft overcast studio lighting, pale lavender seamless background, three-quarter view, detailed miniature model photography. No text.",
+      "settings": {
+        "width": 640,
+        "height": 960,
+        "steps": 8,
+        "cfg": 1.0,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0,
+        "model": "moss_image_sft_int8_convrot_attn.safetensors",
+        "vae": "moss_vae.safetensors",
+        "lora": "moss_image_8_step.safetensors",
+        "lora_strength": 0.8,
+        "shift": 5.0
+      },
+      "seed": 2026101907,
+      "novelty": {
+        "corpus_prompts": 2400,
+        "exact_match": false,
+        "substantial_substring_match": false,
+        "distinctive_phrase_counts": {
+          "funicular": 0,
+          "artichoke": 0,
+          "cable car": 0,
+          "ticket booth": 0
+        }
+      },
+      "images": {
+        "original_9b": {
+          "file": "artichoke_original_9b.png",
+          "sha256": "b624bd1175e2344fb3a36a6c7304c5dbb2219716c77c45d09d1cdc9d88d6f261"
+        },
+        "projected_4b_1600": {
+          "file": "artichoke_projected_4b_1600.png",
+          "sha256": "da2771ca991e638dd2992a5c0e75c5e89d0349fd28316c4b9a00d4d59959c0a0"
+        }
+      }
+    },
+    {
+      "case": "glassblower",
+      "prompt": "A documentary photograph of an elderly female glassblower shaping a glowing glass nautilus shell in a small workshop. She wears a dark indigo apron and round protective goggles. One hand turns a long blowpipe while the other holds metal jacks. Copper tools hang on the brick wall behind her; a circular furnace glows orange to the right. Cool daylight enters from a high window on the left, mixing with the warm furnace light. Waist-up composition, realistic skin texture, candid working moment, no text.",
+      "settings": {
+        "width": 640,
+        "height": 960,
+        "steps": 8,
+        "cfg": 1.0,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0,
+        "model": "moss_image_sft_int8_convrot_attn.safetensors",
+        "vae": "moss_vae.safetensors",
+        "lora": "moss_image_8_step.safetensors",
+        "lora_strength": 0.8,
+        "shift": 5.0
+      },
+      "seed": 2026101907,
+      "novelty": {
+        "corpus_prompts": 2400,
+        "exact_match": false,
+        "substantial_substring_match": false,
+        "distinctive_phrase_counts": {
+          "glassblower": 0,
+          "nautilus": 0,
+          "blowpipe": 0,
+          "metal jacks": 0
+        }
+      },
+      "images": {
+        "original_9b": {
+          "file": "glassblower_original_9b.png",
+          "sha256": "9d8711b0fd3b927c7447cf925f219ea5a3650b747b5e004b793ece1c5f82061a"
+        },
+        "projected_4b_1600": {
+          "file": "glassblower_projected_4b_1600.png",
+          "sha256": "3c37e0f1d87445a9f1322d04c089e23071b1547e3fa43ea548be3d8a26ec733e"
+        }
+      }
+    }
+  ]
+}

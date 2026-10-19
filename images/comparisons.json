@@ -6,6 +6,130 @@
   },
   "comparisons": [
     {
+      "case": "portrait",
+      "prompt": "A candid photograph of a woman reading a paperback beside a cafe window, warm afternoon light, natural skin texture, shallow depth of field.",
+      "settings": {
+        "width": 640,
+        "height": 960,
+        "steps": 8,
+        "cfg": 1.0,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0,
+        "model": "moss_image_sft_int8_convrot_attn.safetensors",
+        "vae": "moss_vae.safetensors",
+        "lora": "moss_image_8_step.safetensors",
+        "lora_strength": 0.8,
+        "shift": 5.0
+      },
+      "seed": 2026101801,
+      "calibration_split": "test",
+      "reference": "Verified original 9B render reused; projected 4B freshly rendered with the released 1600 ridge.",
+      "images": {
+        "original_9b": {
+          "file": "portrait_2026101801_original_9b.png",
+          "sha256": "54b12243b6aab63f23d17565f1b99c535c4375c9d9bde57f8e498d1e92eb4527"
+        },
+        "projected_4b_1600": {
+          "file": "portrait_2026101801_projected_4b_1600.png",
+          "sha256": "53e751a07c6306553398202c414eba3cda119a0517288510e97ced417a640dd6"
+        }
+      }
+    },
+    {
+      "case": "portrait",
+      "prompt": "A candid photograph of a woman reading a paperback beside a cafe window, warm afternoon light, natural skin texture, shallow depth of field.",
+      "settings": {
+        "width": 640,
+        "height": 960,
+        "steps": 8,
+        "cfg": 1.0,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0,
+        "model": "moss_image_sft_int8_convrot_attn.safetensors",
+        "vae": "moss_vae.safetensors",
+        "lora": "moss_image_8_step.safetensors",
+        "lora_strength": 0.8,
+        "shift": 5.0
+      },
+      "seed": 2026101802,
+      "calibration_split": "test",
+      "reference": "Verified original 9B render reused; projected 4B freshly rendered with the released 1600 ridge.",
+      "images": {
+        "original_9b": {
+          "file": "portrait_2026101802_original_9b.png",
+          "sha256": "d10097483e158847c7e63fbf50aa42096ea25359aee07387dc53d5629c8ee99c"
+        },
+        "projected_4b_1600": {
+          "file": "portrait_2026101802_projected_4b_1600.png",
+          "sha256": "bf90475dbd70d366b7152b2f40dde17cc79c303dbef61628383930462d7c0119"
+        }
+      }
+    },
+    {
+      "case": "watercolor",
+      "prompt": "A watercolor illustration of a small seaside village with fishing boats, loose brushwork, soft blue and ochre colors.",
+      "settings": {
+        "width": 640,
+        "height": 960,
+        "steps": 8,
+        "cfg": 1.0,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0,
+        "model": "moss_image_sft_int8_convrot_attn.safetensors",
+        "vae": "moss_vae.safetensors",
+        "lora": "moss_image_8_step.safetensors",
+        "lora_strength": 0.8,
+        "shift": 5.0
+      },
+      "seed": 2026101801,
+      "calibration_split": "test",
+      "reference": "Verified original 9B render reused; projected 4B freshly rendered with the released 1600 ridge.",
+      "images": {
+        "original_9b": {
+          "file": "watercolor_2026101801_original_9b.png",
+          "sha256": "3abbd6073d496efd6a24e498df9a7ede39b35da4388dcc98935e40bd5f18865e"
+        },
+        "projected_4b_1600": {
+          "file": "watercolor_2026101801_projected_4b_1600.png",
+          "sha256": "f17036156fd526c6617bcc7e360a434f582784516936ef7adbf250256294eb2d"
+        }
+      }
+    },
+    {
+      "case": "watercolor",
+      "prompt": "A watercolor illustration of a small seaside village with fishing boats, loose brushwork, soft blue and ochre colors.",
+      "settings": {
+        "width": 640,
+        "height": 960,
+        "steps": 8,
+        "cfg": 1.0,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0,
+        "model": "moss_image_sft_int8_convrot_attn.safetensors",
+        "vae": "moss_vae.safetensors",
+        "lora": "moss_image_8_step.safetensors",
+        "lora_strength": 0.8,
+        "shift": 5.0
+      },
+      "seed": 2026101802,
+      "calibration_split": "test",
+      "reference": "Verified original 9B render reused; projected 4B freshly rendered with the released 1600 ridge.",
+      "images": {
+        "original_9b": {
+          "file": "watercolor_2026101802_original_9b.png",
+          "sha256": "99c65f3b7def378a9221b93835eb4fde859fd6578a0704dc19b5c826182acbe7"
+        },
+        "projected_4b_1600": {
+          "file": "watercolor_2026101802_projected_4b_1600.png",
+          "sha256": "f4a44b74600cc976b57cab438d7a1123ea837c62c953982db307558e4db6b033"
+        }
+      }
+    },
+    {
       "case": "artichoke",
       "prompt": "A realistic tabletop diorama of a miniature funicular railway climbing the layered leaves of a giant artichoke. Two mustard-yellow cable cars travel on parallel rails, linked by a red cable. The artichoke stands upright on a round walnut plinth, with a tiny ticket booth at its base. Soft overcast studio lighting, pale lavender seamless background, three-quarter view, detailed miniature model photography. No text.",
       "settings": {

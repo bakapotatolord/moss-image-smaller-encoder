@@ -14,7 +14,52 @@ This project is **vibe coded-ish**: I use AI to help research, write code and ru
 
 Compare the original Qwen3.5-9B encoder on the left with projected Qwen3.5-4B using the **1,600-training-prompt ridge adapter** on the right. Each pair uses the same prompt, seed and settings. Click an image to view the original 640 x 960 PNG.
 
-Both prompts were written after fitting and checked against all 2,400 calibration prompts. Neither has an exact or substantial substring match, and each scene's distinctive terms are absent from the corpus. Generic vocabulary can overlap; this does not establish absence from the encoders' pretraining data.
+The portrait and watercolor prompts are from the held-out test split of the 2,400-prompt corpus. The additional artichoke and glassblower scenes were written after fitting: neither has an exact or substantial substring match in that corpus, and their distinctive terms are absent. Generic vocabulary can overlap; absence from encoder pretraining was not assessed.
+
+### Portrait
+
+A woman reading a paperback beside a cafe window in warm afternoon light.
+
+Seed **2026101801**
+
+| Original Qwen3.5-9B | Projected Qwen3.5-4B (1,600 train) |
+| --- | --- |
+| [![portrait, original 9B, seed 2026101801](images/portrait_2026101801_original_9b.png)](images/portrait_2026101801_original_9b.png) | [![portrait, projected 4B, seed 2026101801](images/portrait_2026101801_projected_4b_1600.png)](images/portrait_2026101801_projected_4b_1600.png) |
+
+<details>
+<summary>Second seed (2026101802)</summary>
+
+Seed **2026101802**
+
+| Original Qwen3.5-9B | Projected Qwen3.5-4B (1,600 train) |
+| --- | --- |
+| [![portrait, original 9B, seed 2026101802](images/portrait_2026101802_original_9b.png)](images/portrait_2026101802_original_9b.png) | [![portrait, projected 4B, seed 2026101802](images/portrait_2026101802_projected_4b_1600.png)](images/portrait_2026101802_projected_4b_1600.png) |
+
+</details>
+
+### Watercolor boats
+
+A small seaside village with fishing boats, loose watercolor brushwork, and soft blue and ochre colors.
+
+Seed **2026101801**
+
+| Original Qwen3.5-9B | Projected Qwen3.5-4B (1,600 train) |
+| --- | --- |
+| [![watercolor, original 9B, seed 2026101801](images/watercolor_2026101801_original_9b.png)](images/watercolor_2026101801_original_9b.png) | [![watercolor, projected 4B, seed 2026101801](images/watercolor_2026101801_projected_4b_1600.png)](images/watercolor_2026101801_projected_4b_1600.png) |
+
+<details>
+<summary>Second seed (2026101802)</summary>
+
+Seed **2026101802**
+
+| Original Qwen3.5-9B | Projected Qwen3.5-4B (1,600 train) |
+| --- | --- |
+| [![watercolor, original 9B, seed 2026101802](images/watercolor_2026101802_original_9b.png)](images/watercolor_2026101802_original_9b.png) | [![watercolor, projected 4B, seed 2026101802](images/watercolor_2026101802_projected_4b_1600.png)](images/watercolor_2026101802_projected_4b_1600.png) |
+
+</details>
+
+<details>
+<summary>Additional novel-prompt comparisons: artichoke railway and glassblower</summary>
 
 ### Artichoke railway
 
@@ -32,14 +77,16 @@ An elderly glassblower shaping a glowing glass nautilus shell in a brick worksho
 | --- | --- |
 | [![Glassblower, original 9B](images/glassblower_original_9b.png)](images/glassblower_original_9b.png) | [![Glassblower, projected 4B](images/glassblower_projected_4b_1600.png)](images/glassblower_projected_4b_1600.png) |
 
+</details>
+
 <details>
 <summary>Full comparison grid, prompts and settings</summary>
 
-[![Both prompts: original 9B versus projected 4B](images/encoder-comparison.png)](images/encoder-comparison.png)
+[![Six original 9B versus projected 4B image pairs](images/encoder-comparison.png)](images/encoder-comparison.png)
 
-Both examples use seed **2026101907**, 640 x 960, 8 steps, Euler/simple, CFG 1.0, shift 5.0, and the MOSS 8-step LoRA at strength 0.8. They use the installed INT8 ConvRot 4B and 9B encoders with the same MOSS image model and VAE. Full prompt text, generation settings and image hashes are in [images/comparisons.json](images/comparisons.json).
+The portrait and watercolor examples each use seeds **2026101801** and **2026101802**. The two novel scenes use seed **2026101907**. All pairs use 640 x 960, 8 steps, Euler/simple, CFG 1.0, shift 5.0, and the MOSS 8-step LoRA at strength 0.8, with the installed INT8 ConvRot 4B and 9B encoders and the same MOSS image model and VAE. Full prompts, settings and image hashes are in [images/comparisons.json](images/comparisons.json).
 
-These examples preserve the main subjects and lighting, while composition, geometry and incidental details differ. Two prompts and one seed are illustrative examples, not a broad image-quality benchmark.
+The portrait and watercolor 4B images were freshly rendered with the 1,600-prompt adapter. Their original 9B references were reused after checking prompt, seed, noise hash, model/LoRA/VAE identity and image hashes against the new renders. These are illustrative SFW examples, not a broad image-quality benchmark.
 
 </details>
 
@@ -93,7 +140,7 @@ On the same 400 held-out test prompts, the clean 800-prompt ridge reached **0.41
 
 The mixed calibration corpus includes prompts from [jtatman/stable-diffusion-prompts-stats-full-uncensored](https://huggingface.co/datasets/jtatman/stable-diffusion-prompts-stats-full-uncensored). Only the learned projection is distributed here; model weights and calibration prompts are not included.
 
-Expect differences from the original 9B encoder. The two image pairs above use the new 1,600-prompt adapter and fresh SFW prompts; they are not the older 800-prompt examples. Quality with other quantizations, longer prompts, adult image generation, editing and other generation settings has not been established.
+Expect differences from the original 9B encoder. The six image pairs above use the 1,600-prompt adapter: two held-out SFW prompts at two seeds each, plus two newly written SFW scenes at one seed each. All displayed 4B images use this adapter; none are the older 800-prompt renders. Quality with other quantizations, longer prompts, adult image generation, editing and other generation settings has not been established.
 
 The adapter passed the loader and projection parity checks on all 400 cached test prompts. Those checks verify saved-weight compatibility and projection math; the displayed images are separate fresh generations using the matched local 8-step workflow.
 

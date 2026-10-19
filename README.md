@@ -12,20 +12,20 @@ This project is **vibe coded-ish**: I use AI to help research, write code and ru
 
 ## Image comparison
 
-Compare the original 9B encoder on the left with the projected 4B encoder on the right. Each pair uses the same prompt, seed and generation settings. These previews use the original 640 x 960 PNGs; click an image to open it at full resolution.
+Compare the original 9B encoder on the left with the projected 4B encoder using the **800-training-prompt adapter** on the right. Each pair uses the same prompt, seed and generation settings. These previews use the original 640 x 960 PNGs; click an image to open it at full resolution.
 
 ### Portrait
 
 Seed **2026101801**
 
-| Original Qwen3.5-9B                                                                                                                 | Projected Qwen3.5-4B                                                                                                                   |
+| Original Qwen3.5-9B                                                                                                                 | Projected Qwen3.5-4B (800 train)                                                                                                                   |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | [![portrait, original 9B, seed 2026101801](images/portrait_2026101801_original_9b.png)](images/portrait_2026101801_original_9b.png) | [![portrait, projected 4B, seed 2026101801](images/portrait_2026101801_projected_4b.png)](images/portrait_2026101801_projected_4b.png) |
 
 <details>
 <summary>Compare the second seed (2026101802)</summary>
 
-| Original Qwen3.5-9B                                                                                                                 | Projected Qwen3.5-4B                                                                                                                   |
+| Original Qwen3.5-9B                                                                                                                 | Projected Qwen3.5-4B (800 train)                                                                                                                   |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | [![portrait, original 9B, seed 2026101802](images/portrait_2026101802_original_9b.png)](images/portrait_2026101802_original_9b.png) | [![portrait, projected 4B, seed 2026101802](images/portrait_2026101802_projected_4b.png)](images/portrait_2026101802_projected_4b.png) |
 
@@ -35,14 +35,14 @@ Seed **2026101801**
 
 Seed **2026101801**
 
-| Original Qwen3.5-9B                                                                                                                       | Projected Qwen3.5-4B                                                                                                                         |
+| Original Qwen3.5-9B                                                                                                                       | Projected Qwen3.5-4B (800 train)                                                                                                                         |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![watercolor, original 9B, seed 2026101801](images/watercolor_2026101801_original_9b.png)](images/watercolor_2026101801_original_9b.png) | [![watercolor, projected 4B, seed 2026101801](images/watercolor_2026101801_projected_4b.png)](images/watercolor_2026101801_projected_4b.png) |
 
 <details>
 <summary>Compare the second seed (2026101802)</summary>
 
-| Original Qwen3.5-9B                                                                                                                       | Projected Qwen3.5-4B                                                                                                                         |
+| Original Qwen3.5-9B                                                                                                                       | Projected Qwen3.5-4B (800 train)                                                                                                                         |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![watercolor, original 9B, seed 2026101802](images/watercolor_2026101802_original_9b.png)](images/watercolor_2026101802_original_9b.png) | [![watercolor, projected 4B, seed 2026101802](images/watercolor_2026101802_projected_4b.png)](images/watercolor_2026101802_projected_4b.png) |
 
@@ -53,14 +53,14 @@ Seed **2026101801**
 
 Seed **2026101801**
 
-| Original Qwen3.5-9B                                                                                                                    | Projected Qwen3.5-4B                                                                                                                      |
+| Original Qwen3.5-9B                                                                                                                    | Projected Qwen3.5-4B (800 train)                                                                                                                      |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | [![placement, original 9B, seed 2026101801](images/placement_2026101801_original_9b.png)](images/placement_2026101801_original_9b.png) | [![placement, projected 4B, seed 2026101801](images/placement_2026101801_projected_4b.png)](images/placement_2026101801_projected_4b.png) |
 
 <details>
 <summary>Compare the second seed (2026101802)</summary>
 
-| Original Qwen3.5-9B                                                                                                                    | Projected Qwen3.5-4B                                                                                                                      |
+| Original Qwen3.5-9B                                                                                                                    | Projected Qwen3.5-4B (800 train)                                                                                                                      |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | [![placement, original 9B, seed 2026101802](images/placement_2026101802_original_9b.png)](images/placement_2026101802_original_9b.png) | [![placement, projected 4B, seed 2026101802](images/placement_2026101802_projected_4b.png)](images/placement_2026101802_projected_4b.png) |
 
@@ -73,14 +73,14 @@ Seed **2026101801**
 
 Seed **2026101801**
 
-| Original Qwen3.5-9B                                                                                                                    | Projected Qwen3.5-4B                                                                                                                      |
+| Original Qwen3.5-9B                                                                                                                    | Projected Qwen3.5-4B (800 train)                                                                                                                      |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | [![lettering, original 9B, seed 2026101801](images/lettering_2026101801_original_9b.png)](images/lettering_2026101801_original_9b.png) | [![lettering, projected 4B, seed 2026101801](images/lettering_2026101801_projected_4b.png)](images/lettering_2026101801_projected_4b.png) |
 
 <details>
 <summary>Compare the second seed (2026101802)</summary>
 
-| Original Qwen3.5-9B                                                                                                                    | Projected Qwen3.5-4B                                                                                                                      |
+| Original Qwen3.5-9B                                                                                                                    | Projected Qwen3.5-4B (800 train)                                                                                                                      |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | [![lettering, original 9B, seed 2026101802](images/lettering_2026101802_original_9b.png)](images/lettering_2026101802_original_9b.png) | [![lettering, projected 4B, seed 2026101802](images/lettering_2026101802_projected_4b.png)](images/lettering_2026101802_projected_4b.png) |
 
@@ -99,7 +99,7 @@ Seed **2026101801**
 
 - A working MOSS Image workflow and a ComfyUI installation that supports MOSS Image and Qwen3.5.
 - A Qwen3.5-4B text encoder. The tested checkpoint is [Qwen3.5-4B INT8 ConvRot](https://huggingface.co/beycanai/Qwen-LM/resolve/main/Qwen3.5-4B_int8_convrot.safetensors?download=true). Your ComfyUI installation must support loading its quantization format.
-- A compatible MOSS projection adapter, such as `moss_qwen35_4b_to_9b.safetensors` (approximately 21 MB). You need a separate copy of this file; adapter weights are not included in the Git repository.
+- Download the [800-prompt projection adapter](https://github.com/bakapotatolord/moss-image-smaller-encoder/releases/download/adapter-800-train/moss_qwen35_4b_to_9b_800_train.safetensors) (`moss_qwen35_4b_to_9b_800_train.safetensors`, approximately 21 MB). Weights are provided as a release download, separately from the Git checkout.
 
 Choose **Qwen3.5-4B**, not Qwen3-VL-4B. They are different model families.
 
@@ -107,7 +107,7 @@ Choose **Qwen3.5-4B**, not Qwen3-VL-4B. They are different model families.
 
 1. Place this repository in `ComfyUI/custom_nodes/moss-image-smaller-encoder`.
 2. Place your Qwen3.5-4B checkpoint in `ComfyUI/models/text_encoders/`.
-3. Place your projection adapter in `ComfyUI/models/moss_encoder_adapters/`. You can also use the `adapters/` folder inside this repository.
+3. Place `moss_qwen35_4b_to_9b_800_train.safetensors` in `ComfyUI/models/moss_encoder_adapters/`. You can also use the `adapters/` folder inside this repository.
 4. Restart ComfyUI.
 
 The node uses ComfyUI's existing Torch, safetensors and tokenizer dependencies. No additional packages are required.
@@ -121,7 +121,7 @@ The included [workflow.json](workflow.json) uses the [MOSS Image Base 8-step DMD
 1. In **Load CLIP**, select your Qwen3.5-4B checkpoint and set **type** to **moss_image**.
 2. Add **MOSS Smaller Encoder Adapter** from `conditioning/MOSS`.
 3. Connect the CLIP output of **Load CLIP** to the adapter node. If you use **Load LoRA**, connect its CLIP output instead.
-4. Select your projection file in **adapter_name**.
+4. Select `moss_qwen35_4b_to_9b_800_train.safetensors` in **adapter_name**.
 5. Connect the adapter's CLIP output to the normal **CLIP Text Encode** node. Enter your prompt there.
 6. Connect the text encoder's CONDITIONING output to KSampler's positive input.
 
@@ -139,11 +139,24 @@ Use text-only prompts with the standard CLIP Text Encode node. MOSS treats promp
 
 ## What to expect
 
-The adapter is experimental. The initial fit used 200 training prompts, 50 validation prompts and 50 held-out test prompts. Eight image comparisons covered four English prompts and two seeds at 640 x 960, 8 steps, Euler/simple, CFG 1, with the MOSS 8-step LoRA at strength 0.8. The projected encoder preserved the main subjects and styles in these examples, but compositions and incidental details changed.
+The adapter is experimental. This release uses **800 training prompts** (400 SFW and 400 adult/NSFW), with a separate 200-prompt validation set and 200-prompt held-out test set. The full dataset contains 1,200 prompts; only 800 were used to fit this adapter. It uses the standard token-weighted ridge fit. The eight image pairs above use this adapter and cover four English prompts and two seeds at 640 x 960, 8 steps, Euler/simple, CFG 1, with the MOSS 8-step LoRA at strength 0.8. The projected encoder preserved the main subjects and styles in these examples, but compositions and incidental details changed.
 
-Expect differences from the original 9B encoder. Quality with other quantizations, longer prompts, adult content, editing and other generation settings has not been established.
+On the held-out test set, content-token relative L2 error was **0.4141** and cosine similarity was **0.9082**. These measure encoder-feature reconstruction, not image quality. The mixed dataset includes prompts from [jtatman/stable-diffusion-prompts-stats-full-uncensored](https://huggingface.co/datasets/jtatman/stable-diffusion-prompts-stats-full-uncensored).
+
+Expect differences from the original 9B encoder. The image comparisons are SFW. Quality with other quantizations, longer prompts, adult image generation, editing and other generation settings has not been established.
 
 The CLIP-to-CLIP node has been checked in the real ComfyUI runtime: standard CLIP Text Encode reproduced the four comparison prompts' saved conditioning exactly.
+
+<details>
+<summary>Verify the adapter download</summary>
+
+SHA-256 for `moss_qwen35_4b_to_9b_800_train.safetensors`:
+
+```text
+948ddeaaf051ced32314a704fa0a37e8fc2faf8440abe8e2c9a07090507ae00a
+```
+
+</details>
 
 ## How it works
 
